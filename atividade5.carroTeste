@@ -1,0 +1,34 @@
+package Objeto;
+
+public class CarroTeste {
+    public static void main(String[] args) {
+
+    Carro c1 = new Carro();
+
+    c1.nome = "Cruze";
+    c1.marca = "Chevrolet";
+    c1.cor = "Prata";
+    c1.ano = 2018;
+    c1.valor = 84226;
+    c1.velocidade = 100;
+
+    //--------------------------//
+
+        c1.venda(84226);
+        System.out.println();
+        System.out.println("Valor do " + c1.nome +" é de: " +c1.valor +" Reais");
+
+        c1.avista(5000);
+        System.out.println("Valor do " + c1.nome +" à vista é de: " +c1.valor +" Reais");
+
+        c1.acelerar(20);
+        System.out.println();
+        System.out.println("A velocidade do " +c1.nome +" é de: " +c1.velocidade + " km/h");
+
+        c1.freiar(40);
+        System.out.println();
+        System.out.println("A velocidade do " +c1.nome +" depois da redução");
+        System.out.println("de velocidade é de: " +c1.velocidade + " km/h");
+
+    }
+}
