@@ -1,0 +1,27 @@
+package Objeto;
+public class Carro {
+
+    String nome;
+    String  marca;
+    String cor;
+    int ano;
+    double valor;
+    int velocidade;
+
+    //--------------------------------//
+    void venda(int vender){
+    valor = vender;
+    }
+
+    void avista(int descontar){
+    valor -= descontar;
+    }
+
+    void acelerar(int aceleracao){
+        velocidade += aceleracao;
+    }
+
+    void freiar(int reduzir){
+        velocidade -= reduzir;
+    }
+}
