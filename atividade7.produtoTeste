@@ -1,0 +1,25 @@
+package Produto;
+
+public class ProdutoTeste {
+    public static void main(String[] args) {
+
+        Produto p1 = new Produto(743, "Chuteira Futsal Joma Top Flex, Número 39, Cor Preto", 589.00, 7);
+
+        p1.codigo = 743;
+        p1.descricao = "Chuteira Futsal Joma Top Flex, Número 39, Cor Preto";
+        p1.preco = 589.00;
+        p1.estoque = 7;
+
+    //------------------------------//
+
+    p1.adicionarEstoque(1);
+        System.out.println();
+        System.out.println("Depois da adição o estoque ficou com: " +p1.estoque);
+        System.out.println(p1.descricao);
+
+        p1.removerEstoque(5);
+        System.out.println();
+        System.out.println("Depois das vendas o estoque ficou com: " +p1.estoque);
+        System.out.println(p1.descricao);
+    }
+}
