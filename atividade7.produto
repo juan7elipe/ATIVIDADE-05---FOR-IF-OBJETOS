@@ -1,0 +1,47 @@
+package Produto;
+
+public class Produto {
+
+    int codigo;
+    String descricao;
+    double preco;
+    int estoque;
+
+    // Construtor
+    public Produto(int codigo, String descricao, double preco, int estoque) {
+        this.codigo = codigo;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.estoque = estoque;
+    }
+
+    // Métodos getters
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getEstoque() {
+        return estoque;
+    }
+
+    //----------------------------------//
+    public void adicionarEstoque(int quantidade) {
+        estoque += quantidade;
+    }
+
+    public void removerEstoque(int quantidade) {
+        if (estoque >= quantidade) {
+            estoque -= quantidade;
+        } else {
+            System.out.println("Quantidade insuficiente em estoque.");
+        }
+    }
+}
