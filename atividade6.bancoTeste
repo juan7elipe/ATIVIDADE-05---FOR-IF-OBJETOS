@@ -1,0 +1,33 @@
+package ContaBancaria;
+import java.util.Scanner;
+
+public class BancoTeste {
+    public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+        Banco b1 = new Banco();
+
+    b1.saldo = 0;
+    b1.numeroConta = "68131-8";
+
+    //---------------------------//
+
+        System.out.println("Digite o saldo da sua conta:");
+        b1.saldo = scanner.nextInt();
+
+        b1.depositar(1000);
+            System.out.println("Saldo após o depósito: "+ b1.saldo);
+
+
+        if(b1.saldo >= 2000) {
+            b1.sacar(2000);
+            System.out.println("Saldo após o saque: " + b1.saldo);
+        } else {
+            System.out.println("Sem saldo para saques");
+        }
+
+        b1.consultarSaldo();
+        System.out.println("Saldo atual na conta: "+ b1.saldo);
+
+    }
+}
