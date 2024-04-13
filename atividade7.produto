@@ -15,7 +15,8 @@ public class Produto {
         this.estoque = estoque;
     }
 
-    // Métodos getters
+
+    // Métodos getters e setters
     public int getCodigo() {
         return codigo;
     }
@@ -32,6 +33,23 @@ public class Produto {
         return estoque;
     }
 
+    public void setCodigo (int Codigo ){
+        this.codigo = codigo;
+    }
+
+    public void setDescricao (String descricao){
+        this.descricao = descricao;
+    }
+
+    public void setPreco (double preco){
+        this.preco = preco;
+    }
+
+    public void setEstoque (int estoque){
+        this.estoque = estoque;
+    }
+
+
     //----------------------------------//
     public void adicionarEstoque(int quantidade) {
         estoque += quantidade;
@@ -45,4 +63,3 @@ public class Produto {
         }
     }
 }
-
